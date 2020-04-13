@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eindopdracht Frontend</title>
+    <link rel="stylesheet" href="eindopdrachtStyle.css">
+    <script src="loginInfoAlert.js"></script>
+    <script src="createAccountInfoAlert.js"></script>
+
+</head>
+
+<body>
+    <section id="content" class="login">
+        <div class="container">
+            <div class="row">
+                <header>
+                    <h1>
+                        Learn the most useful courses with us
+                    </h1>
+                </header>
+
+                <div class="col-md-6">
+                    <form action="" method="POST">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2>Login</h2>
+                                <p>Please submit email address and password.</p>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="labElem info" for="username"></label>
+                                    <input class="form-control " id="username" type="email" name="username"
+                                        placeholder="Enter your email adress *" required value>
+                                </div>
+                                <div class="form-group">
+                                    <label class="labElem info" for="password"></label>
+                                    <input class="form-control " name="password" id="password" type="password"
+                                        placeholder="Enter your password *" required value>
+                                </div>
+                                <button type="submit" class="btn btn-primary" onclick="loginInfoAlert()">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <form action="" method="POST">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2>Create new account</h2>
+                                <p>Fields marked with an '*' are mandatory.</p>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="labElem" for="roepnaam"></label>
+                                    <input class="form-control " id="roepnaam" name="roepnaam" type="text"
+                                        placeholder="Enter your first name *" required value>
+                                </div>
+                                <div class="form-group">
+                                    <label class="labElem" for="achternaam"></label>
+                                    <input class="form-control " id="achternaam" name="achternaam" type="text"
+                                        placeholder="Enter your last name *" required value>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="labElem" for="email"></label>
+                                    <input type="email" class="form-control " id="email" name="email"
+                                        placeholder="Enter your email adress *" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="labElem" for="password"></label>
+                                    <input class="form-control " name="password" id="password" type="password"
+                                        placeholder="Enter your password *" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="labElem" for="phone"></label>
+                                    <input class="form-control " name="phone" id="phone" type="text"
+                                        placeholder="Enter your phone number *" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="labElem" for="Gender"></label>
+                                    <select class="form-control " id="gender" name="date">
+                                        <option value="male">male</option>
+                                        <option value="famale">famale</option>
+                                        <option value="other">other</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary" onclick="AccountInfoAlert()">Create new
+                                    account</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
